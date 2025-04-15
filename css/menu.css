@@ -169,7 +169,7 @@ header {
         opacity: 1;
     }
 }
-.menu .game img {
+.overlay {
     width: 100%;
     height: 100%;
     border-radius: 50px;
@@ -178,17 +178,26 @@ header {
     -webkit-user-drag: none;
     z-index: 2;
 }
-.menu .game img:hover {
+.overlay:hover {
     width: 100%;
     height: 100%;
     border-radius: 50px;
     opacity : 1;
+    z-index: 2;
 }
-.menu .game img:active {
+.overlay:active {
     width: 100%;
     height: 100%;
     border-radius: 50px;
     opacity : 0;
+    z-index: 2;
+}
+.game_logo {
+    top: 0.5px;
+    border-radius: 50px;
+    z-index: 0;
+    position: absolute;
+    pointer-events: none;
 }
 .menu .game:hover {
     border-radius: 50px;
